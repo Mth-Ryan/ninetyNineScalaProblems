@@ -1,5 +1,5 @@
 import ninetyNineScalaProblems.problems.* 
 
 @main def main(): Unit =
-  Problem5.run()
+  Problem7.run()
 
