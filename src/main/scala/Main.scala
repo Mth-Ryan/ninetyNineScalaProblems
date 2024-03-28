@@ -1,5 +1,5 @@
-@main def hello(): Unit =
-  println("Hello world!")
-  println(msg)
+import ninetyNineScalaProblems.problems.* 
 
-def msg = "I was compiled by Scala 3. :)"
+@main def hello(): Unit =
+  Problem1.run()
+
