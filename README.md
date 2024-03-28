@@ -1,8 +1,21 @@
-## sbt project compiled with Scala 3
+# 99 Scala problems
+[![Scala](https://img.shields.io/badge/scala-%23DC322F.svg?style=for-the-badge&logo=scala&logoColor=white)](https://www.scala-lang.org/)
 
-### Usage
+An adaptation of the [99 Problems in OCaml](https://v2.ocaml.org/learn/tutorials/99problems.html) for Scala.
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+## How to run
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+You will need an standard Scala 3 development environment to run this project: JDK >= 11, Scala >= 3.4.0 and Sbt >= 1.9.9.
+
+The first step is clone this repository and enter in the sbt console:
+
+```bash
+git clone https://github.com/Mth-Ryan/ninetyNineScalaProblems
+cd ninetyNineScalaProblems
+sbt console
+```
+Within the console you can import the `ninentaNineScalaProblems.problems` package and run the predefined examples
+or use the implemented functions and structures to solve the problem. See some examples:
+
+
+![Examples](assets/screenshot-console.png)
