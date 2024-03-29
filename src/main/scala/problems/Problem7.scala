@@ -2,6 +2,8 @@ package ninetyNineScalaProblems.problems
 
 import ninetyNineScalaProblems.core.*
 
+import scala.annotation.tailrec
+
 object Problem7 extends Problem {
   val number = 7
   val description = "Flatten a nested list structure"

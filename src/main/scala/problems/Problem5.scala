@@ -2,11 +2,14 @@ package ninetyNineScalaProblems.problems
 
 import ninetyNineScalaProblems.core.*
 
+import scala.annotation.tailrec
+
 object Problem5 extends Problem {
   val number = 5
   val description = "Reverse a list"
 
   def rev[A](list: List[A]): List[A] = {
+    @tailrec
     def aux(acc: List[A], list: List[A]): List[A] = list match {
       case Nil  => acc
       case h::t => aux(h::acc, t)

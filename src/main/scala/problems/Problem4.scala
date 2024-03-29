@@ -2,11 +2,14 @@ package ninetyNineScalaProblems.problems
 
 import ninetyNineScalaProblems.core.*
 
+import scala.annotation.tailrec
+
 object Problem4 extends Problem {
   val number = 4
   val description = "Find the number of elements of a list"
 
   def length[A](list: List[A]): Int = {
+    @tailrec
     def aux(length: Int, list: List[A]): Int = list match {
       case Nil  => length
       case _::t => aux(length + 1, t)

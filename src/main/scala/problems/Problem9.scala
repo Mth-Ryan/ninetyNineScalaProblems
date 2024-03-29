@@ -9,6 +9,7 @@ object Problem9 extends Problem {
   val description = "Pack consecutive duplicates of list elements into sublists"
   
   def rev[A](list: List[A]): List[A] = {
+    @tailrec
     def aux(acc: List[A], list: List[A]): List[A] = list match {
       case Nil  => acc
       case h::t => aux(h::acc, t)

@@ -2,10 +2,13 @@ package ninetyNineScalaProblems.problems
 
 import ninetyNineScalaProblems.core.*
 
+import scala.annotation.tailrec
+
 object Problem3 extends Problem {
   val number = 3
   val description = "Find the K'th element of a list"
 
+  @tailrec
   def at[A](idx: Int, list: List[A]): Option[A] = list match {
     case Nil  => None
     case h::t => if idx == 1 then Some(h) else at(idx - 1, t)
