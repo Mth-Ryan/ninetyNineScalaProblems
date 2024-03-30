@@ -16,5 +16,8 @@ object Problem9 extends Problem {
   }
 
   def exec(): Unit = {
+    val args = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")
+    logApply("pack", args)
+    logResult(pack(args))
   }
 }
